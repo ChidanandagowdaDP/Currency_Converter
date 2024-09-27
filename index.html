@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <main>
+        <div class="container">
+            <h2>Currency Converter</h2>
+            <form>
+                <div class="amount">
+                    <label for="Amount">Enter Amount</label>
+                    <input value="100" type="text">
+                </div>
+                <div class="select_container">
+                   
+                    <div class="from">
+                     <p>From</p>
+                     <div class="selectCurrency">
+                    <img src="https://flagsapi.com/IN/flat/64.png" >
+                    <select class="from">
+                       <option value="INR">INR</option>
+                      
+                    </select>
+                    </div>
+                   </div>  
+                    <i class="fa-solid fa-right-left"></i>
+                   
+                    <div class="to">
+                    <p>To</p>
+                    <div class="selectCurrency">
+                    <img src="https://flagsapi.com/US/flat/64.png" >
+                        <select class="to">
+                            <option value="USD">USD</option>
+                        </select>
+                    </div>    
+                    </div>
+                </div>
+                <p class="msg">1 USD = 83 INR</p>
+                <button>Get Exchange rate</button>
+            </form>
+        </div>
+    </main>
+    
+    <script src="./codes.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
